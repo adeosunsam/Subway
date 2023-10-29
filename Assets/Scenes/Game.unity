@@ -843,6 +843,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299353489}
   m_CullTransparentMesh: 1
+--- !u!1 &457781236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457781238}
+  - component: {fileID: 457781237}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &457781237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457781236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53a2669fe3ff9824ab1eda3d2cf6d0d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ramps:
+  - {fileID: 4065854012729907741, guid: 3231c7936682c43479c6f32708e4be8e, type: 3}
+  - {fileID: 6523381731002538409, guid: 9ce4f92e360e79745984c0af4289ea27, type: 3}
+  londblocks:
+  - {fileID: 608598809385676753, guid: 8ec73ca2eef404b43b46985afb0364de, type: 3}
+  - {fileID: 6431792546966006179, guid: f92b9f24a6491d644972b45147ab1664, type: 3}
+  jumps:
+  - {fileID: 739795667875614321, guid: 027595c1df776fb4c845ca206d9caea8, type: 3}
+  slides:
+  - {fileID: 6297929392067624908, guid: b1d685ac75a228048bb832dca41621e7, type: 3}
+  pieces: []
+  availableSegments:
+  - {fileID: 1637872234873782725, guid: 75416652917a2464398f0322ad444802, type: 3}
+  - {fileID: 4848386228812353544, guid: 86b029feab7e4ba429c2672f5268d252, type: 3}
+  - {fileID: 3939351778452722337, guid: 44aed443ab0e42b41ad90b6b90bcf6b6, type: 3}
+  availableTransitions:
+  - {fileID: 498710106993217298, guid: a80453eece15d4a429fd912544ef3d78, type: 3}
+  segments: []
+--- !u!4 &457781238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457781236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1010790256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1092,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1076,6 +1138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAt: {fileID: 233465567}
+  offset: {x: 0, y: 1.25, z: -5}
 --- !u!1 &1567633638
 GameObject:
   m_ObjectHideFlags: 0

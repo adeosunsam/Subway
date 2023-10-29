@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
     private bool isRunning = false;
 
-    private const float laneDistance = 3f;
+    private const float laneDistance = 2f;
 
     private float speed, originalSpeed = .1f;
     private float speedIncreaseLastTIck;

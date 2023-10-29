@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraMotor : MonoBehaviour
 {
     [SerializeField]
     private Transform lookAt;
