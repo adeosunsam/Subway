@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
@@ -19,3 +19,4 @@ public class Camera : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime);
     }
 }
+*/
