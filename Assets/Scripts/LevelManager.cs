@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
 {
 	public static LevelManager Instance { set; get; }
 
-	private const bool SHOW_COLLIDER = true;
+	public bool SHOW_COLLIDER = true; //$$
 
 	//Level Spawning
 	private const float DISTANCE_BEFORE_SPAWN = 100.0f;
@@ -56,6 +56,20 @@ public class LevelManager : MonoBehaviour
 			GenerateSegment();
 		}
 
+	}
+
+	private void Update()
+	{
+		if(currentSpawnZ - cameraContainer.position.z < DISTANCE_BEFORE_SPAWN)
+		{
+			GenerateSegment();
+		}
+
+		if(amountOfActiveSegments >= MAX_SEGMENTS_ON_SCREEN)
+		{
+			segments[amountOfActiveSegments - 1].DeSpawn();
+			amountOfActiveSegments--;
+		}
 	}
 
 	private void GenerateSegment()

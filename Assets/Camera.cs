@@ -1,6 +1,6 @@
-using UnityEngine;
+/*using UnityEngine;
 
-public class CameraMotor : MonoBehaviour
+public class Camera : MonoBehaviour
 {
     [SerializeField]
     private Transform lookAt;
@@ -19,3 +19,4 @@ public class CameraMotor : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime);
     }
 }
+*/

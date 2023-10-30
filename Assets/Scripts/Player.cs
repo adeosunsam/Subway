@@ -156,6 +156,7 @@ public class Player : MonoBehaviour
     {
         anim.SetTrigger("Death");
         isRunning = false;
+        GameManager.Instance.IsDead = true;
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
